@@ -1,4 +1,4 @@
-Simple RichPresence, based on the code of someone (whom I don't remember, sorry) to update the count of players with a global state bag in the rich presence.
+Simple RichPresence, based on the logic of someone (whom I don't remember, sorry) to update the count of players with a global state bag in the rich presence.
 
 The configuration file is located in `shared/shared.lua`.
 
