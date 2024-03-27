@@ -26,7 +26,6 @@ local function registerFrameworkEvents()
     return false
 end
 
--- Enregistrer les événements ou configurer le mode autonome si aucun framework n'est détecté
 if not registerFrameworkEvents() and GetResourceState("spawnmanager") == "started" then
     RegisterNetEvent("playerSpawned", function()
         Discord:initRichPresence()
