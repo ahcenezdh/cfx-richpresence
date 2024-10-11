@@ -29,7 +29,9 @@ function Discord:initRichPresence(firstName, lastName, group)
     end
 
     SetDiscordRichPresenceAction(0, presenceSettings.buttons[1].label, presenceSettings.buttons[1].url)
-    SetDiscordRichPresenceAction(1, presenceSettings.buttons[2].label, presenceSettings.buttons[2].url)
+    if presenceSettings.buttons[2] ~= nil then
+        SetDiscordRichPresenceAction(1, presenceSettings.buttons[2].label, presenceSettings.buttons[2].url) 
+    end
 
     local fullName <const> = string.format("%s %s", firstName, lastName)
     local formattedRole <const> = Discord.roleIcons[group] or "👤 Player"
